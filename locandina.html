@@ -1,10 +1,371 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>MHL 2026/27</title>
+
+
+    <style>
+
+        * {
+            box-sizing:border-box;
+        }
+
+
+        body {
+
+            margin:0;
+
+            min-height:100vh;
+
+            background:#020d17;
+
+            color:white;
+
+            font-family:"Segoe UI",Arial,sans-serif;
+
+            display:flex;
+
+            justify-content:center;
+
+        }
+
+
+        .poster {
+
+            width:100%;
+
+            max-width:700px;
+
+            min-height:100vh;
+
+            padding:60px 40px;
+
+            text-align:center;
+
+
+            background:
+                    radial-gradient(
+                            circle at top,
+                            rgba(184,136,57,.25),
+                            transparent 35%
+                    ),
+                    #020d17;
+
+        }
+
+
+
+        .logo img {
+
+            width:260px;
+
+            height:260px;
+
+            object-fit:contain;
+
+        }
+
+
+
+        h1 {
+
+            margin:20px 0 5px;
+
+            color:#b88839;
+
+            font-family:Georgia,serif;
+
+            font-size:42px;
+
+            line-height:1.1;
+
+        }
+
+
+
+        .claim {
+
+            font-size:22px;
+
+            font-style:italic;
+
+            margin-bottom:50px;
+
+        }
+
+
+
+        .badge {
+
+            display:inline-block;
+
+            padding:12px 25px;
+
+            border-radius:30px;
+
+            background:#b88839;
+
+            color:#020d17;
+
+            font-weight:bold;
+
+            margin-bottom:35px;
+
+        }
+
+
+
+        /*
+        =========================
+        CARDS AFFIANCATE
+        =========================
+        */
+
+
+        .cards-container {
+
+            display:grid;
+
+            grid-template-columns:repeat(2,1fr);
+
+            gap:25px;
+
+            margin-bottom:25px;
+
+        }
+
+
+
+        .card {
+
+            background:rgba(255,255,255,.05);
+
+            border:1px solid rgba(184,136,57,.35);
+
+            border-radius:25px;
+
+            padding:25px;
+
+            margin-bottom:25px;
+
+        }
+
+
+        .cards-container .card {
+
+            margin-bottom:0;
+
+        }
+
+
+
+        .card h2 {
+
+            color:#b88839;
+
+            margin-top:0;
+
+            font-size:26px;
+
+        }
+
+
+
+        .item {
+
+            text-align:left;
+
+            font-size:18px;
+
+            margin:14px 0;
+
+        }
+
+
+
+        .footer {
+
+            margin-top:30px;
+
+            font-size:25px;
+
+            color:#b88839;
+
+            font-weight:bold;
+
+        }
+
+
+
+        @media(max-width:700px) {
+
+
+            .poster {
+
+                padding:40px 20px;
+
+            }
+
+
+            .logo img {
+
+                width:220px;
+
+                height:220px;
+
+            }
+
+
+            h1 {
+
+                font-size:34px;
+
+            }
+
+
+            .cards-container {
+
+                grid-template-columns:1fr;
+
+            }
+
+
+        }
+
+
+
+    </style>
+
+
 </head>
+
+
 <body>
 
+
+<div class="poster">
+
+
+    <div class="logo">
+
+        <img src="images/logo-main.png" alt="MHL Logo">
+
+    </div>
+
+
+    <h1>
+        MANTRA<br>
+        HERITAGE LEAGUE
+    </h1>
+
+
+    <div class="claim">
+        Legends are built, not bought.
+    </div>
+
+    <div class="cards-container">
+
+
+        <div class="card">
+
+
+            <h2>
+                ⚽ La Lega
+            </h2>
+
+
+            <div class="item">
+                👥 10 Fantallenatori
+            </div>
+
+
+            <div class="item">
+                🎮 Modalità Mantra
+            </div>
+
+
+            <div class="item">
+                💰 Quota 30€
+            </div>
+
+
+            <div class="item">
+                🔨 Asta Online FantaLab
+            </div>
+
+
+            <div class="item">
+                📱 Leghe Fantacalcio
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <div class="card">
+
+
+            <h2>
+                🏛️ Il Sistema MHL
+            </h2>
+
+
+            <div class="item">
+                🏆 Championship
+            </div>
+
+
+            <div class="item">
+                ⚔️ Highlander Cup
+            </div>
+
+
+            <div class="item">
+                🥇 Heritage Cup
+            </div>
+
+
+            <div class="item">
+                🌱 Youth Academy
+            </div>
+
+
+            <div class="item">
+                ⭐ Legacy System
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="footer">
+
+        ISCRIZIONI APERTE 🔥
+
+        <br>
+
+        Costruisci la tua dinastia
+
+    </div>
+
+
+</div>
+
+
 </body>
+
 </html>
