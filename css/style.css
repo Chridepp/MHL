@@ -766,3 +766,73 @@ header {
     background: none;
     color:var(--mhl-gold);
 }
+
+.excluded-players {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(180, 145, 70, 0.35);
+    border-radius: 16px;
+    background: linear-gradient(
+            135deg,
+            rgba(20, 27, 48, 0.96),
+            rgba(12, 17, 31, 0.96)
+    );
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.excluded-players h3 {
+    margin: 0 0 0.6rem;
+    color: #d4af37;
+    font-size: 1.25rem;
+}
+
+.excluded-players-intro {
+    margin: 0 0 1.25rem;
+    opacity: 0.85;
+}
+
+.excluded-teams {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.excluded-team {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.85rem 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.excluded-team:hover {
+    transform: translateY(-2px);
+    border-color: rgba(212, 175, 55, 0.5);
+}
+
+.excluded-team-name {
+    font-weight: 700;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.82rem;
+}
+
+.excluded-team-players {
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.excluded-note {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
